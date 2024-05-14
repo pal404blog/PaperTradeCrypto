@@ -23,7 +23,7 @@ function Eth() {
     const [limitOrders, SetLimitOrder] = useState([]);
     const [exelimitOrders, ExeSetLimitOrder] = useState();
 
-    let url = "https://0230-4-194-98-164.ngrok-free.app"
+    let url = "http://localhost:4000"
     useEffect(() => {
         // Create a new WebSocket instance
         const socket = new WebSocket('wss://stream.binance.com:9443/ws/ethusdt@trade'); // Change the URL to match your WebSocket server
